@@ -1,0 +1,10 @@
+<h1>soy pagina de mostrar los usuario</h1>
+<ul>
+
+    <!-- los %% son: para iterar sobre los datos -->
+    {% for usuario in usuarios %}
+        <li>{{usuario['username']}}</li>
+    {% endfor %}
+
+</ul>
+
