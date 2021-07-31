@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <title>{% block title %}{% endblock %}</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 <body>
@@ -5,6 +6,6 @@
         <h1>Titulo</h1>
     </nav>
     <section class="content">
-        { % block content % }{ % endblock % }
+        {% block content %}{% endblock  %}
     </section>
 </body>
